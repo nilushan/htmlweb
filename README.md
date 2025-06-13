@@ -26,6 +26,15 @@ This project is a modern and attractive landing page built with HTML, CSS (Tailw
 *   Styled with Tailwind CSS and custom CSS.
 *   Automated deployment to GitHub Pages via GitHub Actions.
 
+## Content Management
+
+A key aspect of this project is the separation of content from the HTML structure.
+*   **HTML Structure (`index.html`):** Provides the semantic layout and placeholder elements (identified by `id` attributes).
+*   **JavaScript Content Object (`js/script.js`):** A `content` object within the JavaScript file holds all the text, links, and data for the page.
+*   **Dynamic Rendering:** On page load, the `renderContent()` function in `js/script.js` populates the HTML placeholders with data from the `content` object.
+
+This approach makes it easier to update page content by modifying the JavaScript object without needing to directly edit the HTML markup extensively.
+
 ## Running Locally
 
 1.  **Clone the repository (if you haven't already):**
