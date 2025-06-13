@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* A slightly cooler gray */
+}
+
+/* Gradient for CTA buttons */
+.btn-gradient {
+    background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+    transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+}
+
+/* Subtle background pattern for hero */
+.hero-bg {
+    background-color: #e0f2fe;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        radial-gradient(at 0% 0%, hsla(196, 88%, 70%, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(216, 88%, 70%, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(180, 88%, 70%, 0.15) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(200, 88%, 70%, 0.15) 0px, transparent 50%);
+}
+
+/* Enhanced card styling */
+.styled-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.styled-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Client logo hover effect */
+.client-logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%) opacity(0.6);
+}
+.client-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) opacity(1);
+}
+
+/* Scroll Animation Classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

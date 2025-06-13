@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern & Attractive Landing Page</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="nav-logo" class="text-2xl font-bold text-slate-900">
+                <!-- Logo will be inserted here by JS -->
+            </div>
+            <div class="hidden md:flex items-center space-x-8" id="nav-links">
+                <!-- Desktop nav links will be inserted here by JS -->
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <!-- Mobile nav links will be inserted here by JS -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Section One: Top Section (Hero) -->
+        <section id="home" class="hero-bg">
+            <div class="container mx-auto px-6 py-24 md:py-40 text-center">
+                <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-4"></h1>
+                <p id="hero-subtitle" class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10"></p>
+                <a id="hero-cta" href="#features" class="btn-gradient text-white font-bold py-4 px-10 rounded-lg text-lg inline-block"></a>
+            </div>
+        </section>
+
+        <!-- Section Two: Features and Benefits -->
+        <section id="features" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="features-title" class="text-3xl md:text-4xl font-bold text-slate-900"></h2>
+                    <p id="features-subtitle" class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto"></p>
+                </div>
+                
+                <div id="products-container" class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- Product cards will be inserted here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Shared Section for "More on Additional Modules" -->
+        <section id="more-on-modules" class="py-20 md:py-28 bg-slate-100 hidden">
+            <div class="container mx-auto px-6">
+                <button id="close-modules-view" class="mb-8 text-cyan-600 hover:text-cyan-800 font-semibold flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                    Back to Products
+                </button>
+                <div id="modules-content-container">
+                    <!-- Content for modules will be inserted here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Three: Testimonials / Client Logos -->
+        <section id="testimonials" class="py-20 md:py-28 bg-white fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="testimonials-title" class="text-3xl md:text-4xl font-bold text-slate-900"></h2>
+                </div>
+                <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                    <!-- Testimonial cards will be inserted here by JS -->
+                </div>
+                
+                <div class="text-center">
+                    <h3 id="clients-title" class="text-xl font-semibold text-slate-600 mb-8"></h3>
+                    <div id="client-logos-grid" class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                        <!-- Client logos will be inserted here by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Four: Call to Action -->
+        <section id="cta" class="bg-slate-800">
+            <div class="container mx-auto px-6 py-20 text-center relative overflow-hidden">
+                <!-- Decorative elements -->
+                <div class="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="relative">
+                    <h2 id="cta-title" class="text-3xl md:text-4xl font-bold text-white mb-4"></h2>
+                    <p id="cta-subtitle" class="text-lg text-slate-300 max-w-2xl mx-auto mb-8"></p>
+                    <a id="cta-button" href="#contact" class="btn-gradient text-white font-bold py-4 px-10 rounded-lg text-lg inline-block"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Five: Contact Us -->
+        <section id="contact" class="py-20 md:py-28 fade-in-section">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 id="contact-title" class="text-3xl md:text-4xl font-bold text-slate-900"></h2>
+                    <p id="contact-subtitle" class="mt-4 text-lg text-slate-600"></p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-2xl shadow-slate-200">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                                <input type="text" name="name" id="name" autocomplete="name" class="mt-1 block w-full px-4 py-3 border-slate-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
+                                <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full px-4 py-3 border-slate-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 border-slate-300 rounded-md shadow-sm focus:ring-cyan-500 focus:border-cyan-500"></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-right">
+                            <button type="submit" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <p id="footer-copyright" class="text-sm"></p>
+                    <p id="footer-tagline" class="text-sm text-slate-400"></p>
+                </div>
+                <div id="footer-socials" class="flex space-x-6">
+                     <!-- Social links will be inserted here by JS -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="js/script.js"></script>
+    </body>
+</html>
